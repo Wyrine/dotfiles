@@ -26,7 +26,23 @@
 [gpg]
 	format = ssh
 
-
+[code]
+        editor = vim
+[color]
+        # Enable colorized output
+        ui = auto
 # This is a url rewrite that helps [go and maybe rust] tooling that downloads libraries from our private repos
 [url "git@github.com:DataDog/"]
         insteadOf = https://github.com/DataDog/
+
+[alias]
+        # Shortcuts for common git commands
+        st = status
+        co = checkout
+        br = branch
+        ci = commit
+        df = diff
+        lg = log --oneline --decorate --all --graph
+
+[push]
+        autoSetupRemote = true
